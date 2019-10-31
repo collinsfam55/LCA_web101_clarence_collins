@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=Dashboard.css>
+    <title>Dashboard</title>
+</head>
+<body>
+    <header><div>
+        <h1>Clarence G Collins</h1>
+        <iframe src="http://free.timeanddate.com/clock/i702vol5/n544/ftbi/tt0/tw0/tm1/ts1/tb4" frameborder="0" width="88" height="36"></iframe>
+    </div>
+    </header>
+    <Main>
+        <H1>One’s life should not be measured in how many breaths one take in each moment, but in measured in how many moments takes away ones breath.</H1>
+        <Article>
+            <aside>                     
+<head> 
+	<script> //CLOCK
+		//function that display value 
+		function dis(val) 
+		{ 
+			document.getElementById("result").value+=val 
+		} 
+		
+		//function that evaluates the digit and return result 
+		function solve() 
+		{ 
+			let x = document.getElementById("result").value 
+			let y = eval(x) 
+			document.getElementById("result").value = y 
+		} 
+		
+		//function that clear the display 
+		function clr() 
+		{ 
+			document.getElementById("result").value = "" 
+		}         
+    </script> 	   
+</head> 
+ <!-- My ToDo List -->
+ <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+      </ul>
+<body> 
+     <!-- for styling -->
+	<style> 
+            .title{ 
+            margin-bottom: 10px; 
+            text-align:center; 
+            width: 210px; 
+            color:darkslategray; 
+            border: solid blue 2px; 
+            } 
+    
+            input[type="button"] 
+            { 
+            background-color:skyblue; 
+            color: black; 
+            border: solid floralwhite 1px; 
+            width:100% 
+            } 
+    
+            input[type="text"] 
+            { 
+            background-color:white; 
+            border: solid black 2px; 
+            width:100% 
+            } 
+        </style>    
+    <!-- create table -->
+	<div class = title >Greatings and Salutations</div> 
+	<table border="1"> 
+		<tr> 
+			<td colspan="3"><input type="text" id="result"/></td> 
+			<!-- clr() function will call clr to clear all value -->
+			<td><input type="button" value="c" onclick="clr()"/> </td> 
+		</tr> 
+		<tr> 
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+			<td><input type="button" value="1" onclick="dis('1')"/> </td> 
+			<td><input type="button" value="2" onclick="dis('2')"/> </td> 
+			<td><input type="button" value="3" onclick="dis('3')"/> </td> 
+			<td><input type="button" value="/" onclick="dis('/')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="dis('4')"/> </td> 
+			<td><input type="button" value="5" onclick="dis('5')"/> </td> 
+			<td><input type="button" value="6" onclick="dis('6')"/> </td> 
+			<td><input type="button" value="-" onclick="dis('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="dis('7')"/> </td> 
+			<td><input type="button" value="8" onclick="dis('8')"/> </td> 
+			<td><input type="button" value="9" onclick="dis('9')"/> </td> 
+			<td><input type="button" value="+" onclick="dis('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick="dis('.')"/> </td> 
+			<td><input type="button" value="0" onclick="dis('0')"/> </td> 
+			<!-- solve function call function solve to evaluate value -->
+			<td><input type="button" value="=" onclick="solve()"/> </td> 
+			<td><input type="button" value="*" onclick="dis('*')"/> </td> 
+		</tr> 
+    </table> 
+    
+    <!-- this script got from www.htmlbestcodes.com-Coded by: Krishna Eydat -->
+<html>
+        <head>
+        </head>
+        <body>
+        <right>
+        <script language="javascript" type="text/javascript">
+        var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+        var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+        
+        //  DECLARE AND INITIALIZE VARIABLES
+        var Calendar = new Date();
+        
+        var year = Calendar.getFullYear();     // Returns year
+        var month = Calendar.getMonth();    // Returns month (0-11)
+        var today = Calendar.getDate();    // Returns day (1-31)
+        var weekday = Calendar.getDay();    // Returns day (1-31)
+        
+        var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+        var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+        var cal;    // Used for printing
+        
+        Calendar.setDate(1);    // Start the calendar day at '1'
+        Calendar.setMonth(month);    // Start the calendar month at now
+        
+        
+        /* VARIABLES FOR FORMATTING
+        NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+              tags to customize your caledanr's look. */
+        
+        var TR_start = '<TR>';
+        var TR_end = '</TR>';
+        var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+        var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+        var TD_start = '<TD WIDTH="30"><CENTER>';
+        var TD_end = '</CENTER></TD>';
+        
+        /* BEGIN CODE FOR CALENDAR
+        NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+        tags to customize your calendar's look.*/
+        
+        cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+        cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+        cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+        cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+        cal += TR_start;
+        
+        //   DO NOT EDIT BELOW THIS POINT  //
+        
+        // LOOPS FOR EACH DAY OF WEEK
+        for(index=0; index < DAYS_OF_WEEK; index++)
+        {
+        
+        // BOLD TODAY'S DAY OF WEEK
+        if(weekday == index)
+        cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+        
+        // PRINTS DAY
+        else
+        cal += TD_start + day_of_week[index] + TD_end;
+        }
+        
+        cal += TD_end + TR_end;
+        cal += TR_start;
+        
+        // FILL IN BLANK GAPS UNTIL TODAY'S DAY
+        for(index=0; index < Calendar.getDay(); index++)
+        cal += TD_start + '  ' + TD_end;
+        
+        // LOOPS FOR EACH DAY IN CALENDAR
+        for(index=0; index < DAYS_OF_MONTH; index++)
+        {
+        if( Calendar.getDate() > index )
+        {
+          // RETURNS THE NEXT DAY TO PRINT
+          week_day =Calendar.getDay();
+        
+          // START NEW ROW FOR FIRST DAY OF WEEK
+          if(week_day == 0)
+          cal += TR_start;
+        
+          if(week_day != DAYS_OF_WEEK)
+          {
+        
+          // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+          var day  = Calendar.getDate();
+        
+          // HIGHLIGHT TODAY'S DATE
+          if( today==Calendar.getDate() )
+          cal += highlight_start + day + highlight_end + TD_end;
+        
+          // PRINTS DAY
+          else
+          cal += TD_start + day + TD_end;
+          }
+        
+          // END ROW FOR LAST DAY OF WEEK
+          if(week_day == DAYS_OF_WEEK)
+          cal += TR_end;
+          }
+        
+          // INCREMENTS UNTIL END OF THE MONTH
+          Calendar.setDate(Calendar.getDate()+1);
+        
+        }// end for loop
+        
+        cal += '</TD></TR></TABLE></TABLE>';
+        
+        //  PRINT CALENDAR
+        document.write(cal);
+        
+        //  End -->
+        </script>
+        </right>
+        <br/><div style="clear:both"></div><div><a target="_blank" href="http://www.htmlbestcodes.com/"><span style="font-size: 8pt; text-decoration: none">HTML Best Codes</span></a></div>
+        </body>
+        </html>
+</body> 
