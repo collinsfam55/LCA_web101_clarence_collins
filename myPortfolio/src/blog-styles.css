@@ -1,0 +1,43 @@
+h1 {
+    font-size: 50px;
+    color: blueviolet;
+    width: 60%;
+    margin: 2% auto;
+    
+}
+
+body {background-color:lightblue;
+
+
+}
+
+main {
+    background-color: lightseagreen;
+    width: 60%;
+    margin: 3% auto;
+}
+
+article {
+    margin: 1% auto;
+    border: solid darkblue 2px;
+    width: 75%;
+    background-color: lightyellow;
+}
+
+article > h2 {
+   font-size: 40px;
+   color: rgb(33, 10, 240);
+
+}
+
+article:hover {
+    background: rgba(3, 1, 26, 0.418);
+}
+
+article:hover > h2 {
+    color: rgb(2, 1, 12);
+}
+
+article:hover > h1 {
+    color: darkred;
+}
