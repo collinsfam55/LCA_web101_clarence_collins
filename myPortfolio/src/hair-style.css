@@ -1,6 +1,6 @@
 header {
     margin: 0 auto;
-    padding: 44px 0 50px;
+    padding: 44px 0 0px;
     text-align: center;
     width: 600px;
 }
@@ -22,5 +22,5 @@ body div img {
     margin: 0;
     padding: 0;
     width: 100%;
-    
+
 }
