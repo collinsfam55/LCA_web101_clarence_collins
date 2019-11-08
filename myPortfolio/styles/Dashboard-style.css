@@ -1,6 +1,6 @@
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
-    background-image:url(./Beach.jpg);
+    background-image:url(../images/);
     background-repeat: no-repeat;
     background-size:cover;
 
@@ -119,4 +119,3 @@ body {
   .addBtn:hover {
     background-color: #bbb;
   }
-
