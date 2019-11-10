@@ -1,0 +1,28 @@
+body {
+  background-image: url(../img/Sailing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  header {
+  margin: 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: auto;
+  }
+
+  nav a {
+    padding-top: 80px;
+    margin: 50% 50% 50% 50%;
+    height: 10%;
+    width: 35%;
+    color: black;
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 7px solid blue;
+  }
+
