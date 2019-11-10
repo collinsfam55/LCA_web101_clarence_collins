@@ -92,7 +92,7 @@ body {
   }
 
   /* Style the input */
-  input {
+    input {
     margin: 0;
     border: none;
     border-radius: 0;
@@ -119,3 +119,27 @@ body {
   .addBtn:hover {
     background-color: #bbb;
   }
+
+  myinput {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
