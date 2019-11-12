@@ -4,7 +4,14 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
 
-    /* My ToDo List
+   .container {
+     grid-row: 40px auto 40px%;
+     
+
+    }
+
+
+         /* My ToDo List
     Include the padding and border in an element's total width and height */
      box-sizing: border-box;
 
